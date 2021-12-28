@@ -1,0 +1,5 @@
+	//adds a start link beside course name change_log dec272021
+			$starttext = "click here to start";
+			$startlink = html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)),
+                                                $starttext, array('class' => $course->visible ? '' : 'dimmed'));
+			$content .= $startlink;
